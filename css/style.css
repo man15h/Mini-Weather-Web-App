@@ -1,0 +1,132 @@
+/* for presentation only */
+body{
+	font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+h2{
+	font-weight:600;
+	font-size:22px;
+}
+h4{
+	font-size:16px;
+}
+.btn-sm, .btn-group-sm>.btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 2rem;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #00838F;
+    border-color: #00838F;
+}
+.header {
+	background: no-repeat center  fixed url(../header-img.jpg);
+	height:700px;
+	background-color:black;
+	width:100%; /* fallback for older browsers */
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(../header-img.jpg);
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+	position: fixed;
+	vertical-align: middle;
+	top:30%;
+    width:80%;
+    margin: 0 0 0 -40%;
+    left:50%;
+	opacity:0.8;
+	color:white;
+}
+.sub-head-text{
+	color:#00838F;
+}
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+.input-background{
+	 background-color:yellow;
+	 background: no-repeat center url(../wooden-texture.jpg);
+	 width:100%;
+	 padding:20px 0px 20px 0px;;
+	 
+}
+.city-input{
+	 padding-left:10px;
+	padding-right:10px;
+}
+.background-image{
+	
+}
+.container-fluid{
+	
+}
+.main-weather-div{
+	height:500px;
+}
+.weather-error {
+	height:100%;
+	width:100%;
+	color: red;
+}
+
+.weather-wrapper {
+	height:350px;
+	width:100%;
+	color: white;
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
+strong {
+	color:#00838F;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+.hide-it {
+	display: none;
+}
+
+.my-footer {
+	background-color:#434242;
+	padding-bottom:50px;
+	padding-top:50px;
+}
+.font-sexy{
+	    font-size: 28px;
+		padding-left:12px;
+		padding-right:12px;
+		opacity:0.7;
+}
+.font-sexy:hover{
+	opacity:1;
+}
+#contact p{
+color:#727878;}
+#contact h2, #contact .row * {
+    color: #00838F;
+}
+#contact h2{
+    font-size: 54px;
+    text-align: center;
+}

@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en" manifest="/offline.manifest">
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<title>Home Page</title>
+		<!-- Compiled and minified CSS -->
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!-- Bootstrap Core CSS -->
+		<link href="css/materialize.min.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body >
+		<header id="top" class="header ">
+					<div class="text-vertical-center" id="fading" >
+						<h1>Weather App</h1>
+						<h3 class="sub-head-text">OpenweatherApp</h3>
+					</div>
+					
+		</header>
+		
+	<div class="container-fluid">
+		<div class="row main-weather-row">
+				<!-- City-1 -->
+				<div class="col-xl-1 col-lg-1 col-md-3 col-sm-4  col-xs-9 main-weather-div">
+					<center>
+						<div class="input-background">
+							<div class="city-input">
+								<h4>Enter city: <input type="text" id="city-a" class="form-control" placeholder="City" required data-validation-required-message="Please enter the city"/></h4>
+									<div class="weather-error weather-error-a hide-it">
+										<P> Please enter the City</P>
+									</div>
+								<p><button class="btn btn-primary btn-sm" id="a"><span>Get Weather</span></button></p>
+							</div>
+						</div>
+						<div class="background-img weather-wrapper weather-wrapper-a hide-it" id="background-img-a">
+							<h2 id="weather-city-a"></h2>
+							<h2 id="temperature-a"></h2>
+							<h4 id="description-a"></h4>
+							<h4 id="humidity-a"></h4>
+							<h4 id="wind-speed-a"></h4>
+							<h4 id="pressure-a"></h4>
+								
+						</div>
+					</center>
+				</div>
+				<!-- City-2 -->
+				<div class="col-xl-1 col-lg-1 col-md-3 col-sm-4  col-xs-9 main-weather-div">
+					<center>
+						<div class="input-background">
+							<div class="city-input">
+								<h4>Enter city: <input type="text" id="city-b" class="form-control" placeholder="City"/></h4>
+									<div class="weather-error weather-error-b hide-it">
+										<P> Please enter the City</P>
+									</div>
+								<p><button class="btn btn-primary btn-sm" id="b"><span>Get Weather</span></button></p>
+							</div>
+						</div>
+						<div class="weather-wrapper weather-wrapper-b hide-it" id="background-img-b">
+							<h2 id="weather-city-b"></h2>
+							<h2 id="temperature-b"></h2>
+							<h4 id="description-b"></h4>
+							<h4 id="humidity-b"></h4>
+							<h4 id="wind-speed-b"></h4>
+							<h4 id="pressure-b"></h4>
+								
+						</div>
+					</center>
+				</div>
+				<!-- City-3 -->
+				<div class="col-xl-1 col-lg-1 col-md-3 col-sm-4  col-xs-9 main-weather-div">
+					<center>
+						<div class="input-background">
+							<div class="city-input">
+								<h4>Enter city: <input type="text" id="city-c" class="form-control" placeholder="City"/></h4>
+									<div class="weather-error weather-error-c hide-it">
+										<P> Please enter the City</P>
+									</div>
+								<p><button class="btn btn-primary btn-sm" id="c"><span>Get Weather</span></button></p>
+							</div>
+						</div>	
+						<div class="weather-wrapper weather-wrapper-c hide-it" id="background-img-c">
+							<h2 id="weather-city-c"></h2>
+							<h2 id="temperature-c"></h2>
+							<h4 id="description-c"></h4>
+							<h4 id="humidity-c"></h4>
+							<h4 id="wind-speed-c"></h4>
+							<h4 id="pressure-c"></h4>
+								
+						</div>
+					</center>
+				</div>
+				<!-- City-4 -->
+				<div class="col-xl-1 col-lg-1 col-md-3 col-sm-4  col-xs-9 main-weather-div">
+					<center>
+						<div class="input-background">
+							<div class="city-input">
+								<h4>Enter city: <input type="text" id="city-d" class="form-control" placeholder="City"/></h4>
+									<div class="weather-error weather-error-d hide-it">
+										<P> Please enter the City</P>
+									</div>
+								<p><button class="btn btn-primary btn-sm" id="d"><span>Get Weather</span></button></p>
+							</div>
+						</div>
+						<div class="weather-wrapper weather-wrapper-d hide-it" id="background-img-d">
+							<h2 id="weather-city-d"></h2>
+							<h2 id="temperature-d"></h2>
+							<h4 id="description-d"></h4>
+							<h4 id="humidity-d"></h4>
+							<h4 id="wind-speed-d"></h4>
+							<h4 id="pressure-d"></h4>
+								
+						</div>
+					</center>
+				</div>
+				<!-- City-5 -->
+				<div class="col-xl-1 col-lg-1 col-md-3 col-sm-4  col-xs-9 main-weather-div">
+					<center>
+						<div class="input-background">
+							<div class="city-input">
+								<h4>Enter city: <input type="text" id="city-e" class="form-control" placeholder="City"/></h4>
+									<div class="weather-error weather-error-e hide-it">
+										<P> Please enter the City</P>
+									</div>
+								<p><button class="btn btn-primary btn-sm" id="e"><span>Get Weather</span></button></p>
+							</div>
+						</div>
+						<div class="weather-wrapper weather-wrapper-e hide-it" id="background-img-e">
+							<h2 id="weather-city-e"></h2>
+							<h2 id="temperature-e"></h2>
+							<h4 id="description-e"></h4>
+							<h4 id="humidity-e"></h4>
+							<h4 id="wind-speed-e"></h4>
+							<h4 id="pressure-e"></h4>
+								
+						</div>
+					</center>
+				</div>
+				<!-- City-6 -->
+				<div class="col-xl-1 col-lg-1 col-md-3 col-sm-4  col-xs-9 main-weather-div">
+					<center>
+						<div class="input-background">
+							<div class="city-input">
+								<h4>Enter city: <input type="text" id="city-f" class="form-control" placeholder="City"/></h4>
+									<div class="weather-error weather-error-f hide-it">
+										<P> Please enter the City</P>
+									</div>
+								<p><button class="btn btn-primary btn-sm" id="f"><span>Get Weather</span></button></p>
+							</div>
+						</div>
+						<div class="weather-wrapper weather-wrapper-f hide-it" id="background-img-f">
+							<h2 id="weather-city-f"></h2>
+							<h2 id="temperature-f"></h2>
+							<h4 id="description-f"></h4>
+							<h4 id="humidity-f"></h4>
+							<h4 id="wind-speed-f"></h4>
+							<h4 id="pressure-f"></h4>
+								
+						</div>
+					</center>
+				</div>
+				<!-- City-7 -->
+				<div class="col-xl-1 col-lg-1 col-md-3 col-sm-4  col-xs-9 main-weather-div">
+					<center>
+						<div class="input-background">
+							<div class="city-input">
+								<h4>Enter city: <input type="text" id="city-g" class="form-control" placeholder="City"/></h4>
+									<div class="weather-error weather-error-g hide-it">
+										<P> Please enter the City</P>
+									</div>
+								<p><button class="btn btn-primary btn-sm" id="g"><span>Get Weather</span></button></p>
+							</div>
+						</div>
+						<div class="weather-wrapper weather-wrapper-g hide-it" id="background-img-g">
+							<h2 id="weather-city-g"></h2>
+							<h2 id="temperature-g"></h2>
+							<h4 id="description-g"></h4>
+							<h4 id="humidity-g"></h4>
+							<h4 id="wind-speed-g"></h4>
+							<h4 id="pressure-g"></h4>
+								
+						</div>
+					</center>
+				</div>
+				<!-- City-8 -->
+				<div class="col-xl-1 col-lg-1 col-md-3 col-sm-4  col-xs-9 main-weather-div">
+					<center>
+						<div class="input-background">
+							<div class="city-input">
+								<h4>Enter city: <input type="text" id="city-h" class="form-control" placeholder="City"/></h4>
+									<div class="weather-error weather-error-h hide-it">
+										<P> Please enter the City</P>
+									</div>
+								<p><button class="btn btn-primary btn-sm" id="h"><span>Get Weather</span></button></p>
+							</div>
+						</div>
+						<div class="weather-wrapper weather-wrapper-h hide-it" id="background-img-h">
+							<h2 id="weather-city-h"></h2>
+							<h2 id="temperature-h"></h2>
+							<h4 id="description-h"></h4>
+							<h4 id="humidity-h"></h4>
+							<h4 id="wind-speed-h"></h4>
+							<h4 id="pressure-h"></h4>
+								
+						</div>
+					</center>
+				</div>
+				<!-- City-9 -->
+				<div class="col-xl-1 col-lg-1 col-md-3 col-sm-4  col-xs-9 main-weather-div">
+					<center>
+						<div class="input-background">
+							<div class="city-input">
+								<h4>Enter city: <input type="text" id="city-i" class="form-control" placeholder="City"/></h4>
+									<div class="weather-error weather-error-i hide-it">
+										<P> Please enter the City</P>
+									</div>
+								<p><button class="btn btn-primary btn-sm" id="i"><span>Get Weather</span></button></p>
+							</div>
+						</div>
+						<div class="weather-wrapper weather-wrapper-i hide-it" id="background-img-i">
+							<h2 id="weather-city-i"></h2>
+							<h2 id="temperature-i"></h2>
+							<h4 id="description-i"></h4>
+							<h4 id="humidity-i"></h4>
+							<h4 id="wind-speed-i"></h4>
+							<h4 id="pressure-i"></h4>
+								
+						</div>
+					</center>
+				</div>
+		</div>	
+		
+	</div>
+	<footer class="my-footer">
+			<div id="contact" class="container">
+				<center><h2>Contact</h2>
+				<p class="lead">“Time you enjoyed wasting, wasn't wasted. ”<br>-John Lennon</p>
+				<a href="https://twitter.com/ManishKunwal" class="font-sexy" style="color:#00ABF1;font-size:34px;"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="https://www.facebook.com/manish.kunwal" class="font-sexy" style="color:#3C5A99;font-size:32px;"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="https://plus.google.com/+manishkunwal/" class="font-sexy" style="color:#DA4835;font-size:32px;"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+				<a href="https://github.com/man15h/Mini-Weather-Web-App.git" class="font-sexy" style="color:#131313;font-size:36px;"><i class="fa fa-github" aria-hidden="true"></i></a>
+				
+				</center>
+			</div>
+	</footer>
+	<script>
+	"use strict";
+	$(document).ready(function() {
+	
+		$(".btn").click(function() {
+		var id = $(this).attr('id'); // $(this) refers to button that was clicked
+			event.preventDefault();
+			var city = $("#city-"+id).val();		// city equal to inupt
+				if(city != ''){					// if inout fileld is not empty then call weather function
+				$.getJSON( "http://api.openweathermap.org/data/2.5/weather?q="+encodeURIComponent(city)+"&units=metric&appid=bbc9c4c48e841f2b79630619131318d6", function(data) {	
+					var currWeather					= new Array();								// create array to hold weather response
+					currWeather['city-weather']		= (data.name);								// name of city
+					currWeather['contry']			= (data.sys.country);						//name of country
+					currWeather['currTemp']			= Math.round(data.main.temp);				// today's  temp
+					currWeather['humidity']			= Math.round(data.main.humidity);			// humidity (in percent)
+					currWeather['pressure']			= data.main.pressure ;		//pressure 
+					
+					currWeather['description']		= data.weather[0].description;				// short text description (ie. rain, sunny, etc.)
+					currWeather['icon']				= data.weather[0].icon;	// 50x50 pixel png icon
+					currWeather['cloudiness']		= data.clouds.all;							// cloud cover (in percent)
+					currWeather['windSpeed']		= Math.round(data.wind.speed*3.6);				// wind speed
+					
+					//manipulate html from above Array
+					document.getElementById("weather-city-"+id).innerHTML =currWeather['city-weather']+", "+currWeather['contry'];
+					document.getElementById("temperature-"+id).innerHTML =currWeather['currTemp']+' &deg;C';
+					document.getElementById("description-"+id).innerHTML =currWeather['description'];
+					document.getElementById("humidity-"+id).innerHTML ='<strong>Humidity: </strong>'+currWeather['humidity']+' %'	;
+					document.getElementById("wind-speed-"+id).innerHTML ='<strong>Wind: </strong>'+currWeather['windSpeed']+'km/h';
+					document.getElementById("pressure-"+id).innerHTML ='<strong>Pressure: </strong>'+currWeather['pressure']+'hPa';
+					document.getElementById("background-img-"+id).style.backgroundImage = 'url(img/'+currWeather['icon']+'.png)';
+			
+					//show weather and hide error 
+					$('.weather-wrapper-'+id).show();
+					$('.weather-error-'+id).hide();
+				
+			});
+			} else {
+					//show weather and hide error 
+					$('.weather-error-'+id).show();	
+					$('.weather-wrapper-'+id).hide();					
+			}
+	});
+	
+	});
+	var fadeStart=150// 
+    ,fadeUntil=300 //
+    ,fading = $('#fading');
+	$(window).bind('scroll', function(){
+    var offset = $(document).scrollTop(),opacity=0;
+    if( offset<=fadeStart ){
+			opacity=1;
+    }else if( offset<=fadeUntil ){
+        opacity=1-offset/fadeUntil;
+    }
+    fading.css('opacity',opacity).html();
+	});
+	</script>
+
+</body>
+	
+</html>
